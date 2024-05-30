@@ -63,28 +63,13 @@ const Tiltcard = () => {
       }}
       className="reltive h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
     >
-      <div
+        <img 
+        src="https://i.pinimg.com/originals/e3/da/93/e3da939bd48f9abb31fea4557fa9a5f1.gif"
+        className="inset-4 grid place-content-center rounded-xl"
         style={{
           transform: "translateZ(75px)",
-          transformStyle: "preserve-3d",
-        }}
-        className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
-      >
-        <FiMousePointer
-          style={{
-            transform: "translateZ(75px)",
-          }}
-          className="mx-auto text-4xl"
-        />
-        <p
-          style={{
-            transform: "translateZ(50px)",
-          }}
-          className="text-center text-2xl font-bold"
-        >
-          Hover Me bitch!!!
-        </p>
-      </div>
+         }} />
+      
     </motion.div>
   )
 
