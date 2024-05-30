@@ -9,26 +9,31 @@ import { FiMousePointer } from "react-icons/fi";
 
 export default function App() {
   return (
-    <div className="grid w-full h-[100vh] place-content-center bg-gradient-to-br from-indigo-500 to-violet-500 px-4 py-12 text-slate-900">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <div class="relative flex overflow-x-hidden">
+    <div className="grid w-full h-[100vh] place-content-center bg-gradient-to-br from-blue-500 to-yellow-500 px-4 py-12 text-white text-slate-900">
+      <div className="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="relative flex overflow-x-hidden ">
           <div class="py-12 animate-marquee whitespace-nowrap">
-            <span class="text-4xl mx-4">Marquee Item 1</span>
-            <span class="text-4xl mx-4">Marquee Item 2</span>
-            <span class="text-4xl mx-4">Marquee Item 3</span>
-            <span class="text-4xl mx-4">Marquee Item 4</span>
-            <span class="text-4xl mx-4">Marquee Item 5</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
           </div>
-
           <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-            <span class="text-4xl mx-4">Marquee Item 1</span>
-            <span class="text-4xl mx-4">Marquee Item 2</span>
-            <span class="text-4xl mx-4">Marquee Item 3</span>
-            <span class="text-4xl mx-4">Marquee Item 4</span>
-            <span class="text-4xl mx-4">Marquee Item 5</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
+            <span class="text-4xl mx-4 font-running">HALLO:D</span>
           </div>
         </div>
-      </div>  
+      </div>
       <Tiltcard />
     </div>
   );
@@ -80,7 +85,7 @@ const Tiltcard = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="reltive h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
+      className="reltive h-96 w-72 rounded-xl bg-gradient-to-br from-blue-300 to-yellow-300"
     >
       <img
         src="https://i.pinimg.com/originals/e3/da/93/e3da939bd48f9abb31fea4557fa9a5f1.gif"
@@ -89,7 +94,14 @@ const Tiltcard = () => {
           transform: "translateZ(75px)",
         }}
       />
-
+      <div
+        src="https://i.pinimg.com/originals/e3/da/93/e3da939bd48f9abb31fea4557fa9a5f1.gif"
+        className="inset-4 grid place-content-center rounded-xl text-center"
+        style={{
+          transform: "translateZ(75px)",
+        }}>
+        <h1 className="font-running text-4xl">Rafi Asyam</h1>
+      </div>
     </motion.div>
   )
 
