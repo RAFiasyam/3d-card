@@ -16,7 +16,9 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 # I Try to Revamp in my style 
-<img src="https://i.pinimg.com/originals/ad/fd/c6/adfdc6f9f2f381bfd4d57c2800aa3fb1.gif" width="200px">
-<img src="https://i.pinimg.com/originals/6b/9d/fa/6b9dfaeaa5deffbb6cf7950961d31f08.gif" width="200px">
+<div align="center" display="flex" flex-decoration="flex-row">
+  <img src="https://i.pinimg.com/originals/ad/fd/c6/adfdc6f9f2f381bfd4d57c2800aa3fb1.gif" width="200px">
+  <img src="https://i.pinimg.com/originals/6b/9d/fa/6b9dfaeaa5deffbb6cf7950961d31f08.gif" width="200px">
+</div>
 
 
