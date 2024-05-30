@@ -10,6 +10,25 @@ import { FiMousePointer } from "react-icons/fi";
 export default function App() {
   return (
     <div className="grid w-full h-[100vh] place-content-center bg-gradient-to-br from-indigo-500 to-violet-500 px-4 py-12 text-slate-900">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="relative flex overflow-x-hidden">
+          <div class="py-12 animate-marquee whitespace-nowrap">
+            <span class="text-4xl mx-4">Marquee Item 1</span>
+            <span class="text-4xl mx-4">Marquee Item 2</span>
+            <span class="text-4xl mx-4">Marquee Item 3</span>
+            <span class="text-4xl mx-4">Marquee Item 4</span>
+            <span class="text-4xl mx-4">Marquee Item 5</span>
+          </div>
+
+          <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+            <span class="text-4xl mx-4">Marquee Item 1</span>
+            <span class="text-4xl mx-4">Marquee Item 2</span>
+            <span class="text-4xl mx-4">Marquee Item 3</span>
+            <span class="text-4xl mx-4">Marquee Item 4</span>
+            <span class="text-4xl mx-4">Marquee Item 5</span>
+          </div>
+        </div>
+      </div>  
       <Tiltcard />
     </div>
   );
@@ -37,7 +56,7 @@ const Tiltcard = () => {
     const width = rect.width;
     const height = rect.height;
 
-    const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;  
+    const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
     const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
 
     const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
@@ -45,7 +64,7 @@ const Tiltcard = () => {
 
     x.set(rX);
     y.set(rY);
-  };      
+  };
 
   const handleMouseLeave = () => {
     x.set(0);
@@ -63,13 +82,14 @@ const Tiltcard = () => {
       }}
       className="reltive h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
     >
-        <img 
+      <img
         src="https://i.pinimg.com/originals/e3/da/93/e3da939bd48f9abb31fea4557fa9a5f1.gif"
         className="inset-4 grid place-content-center rounded-xl"
         style={{
           transform: "translateZ(75px)",
-         }} />
-      
+        }}
+      />
+
     </motion.div>
   )
 
