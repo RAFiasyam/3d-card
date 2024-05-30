@@ -5,7 +5,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import { FiMousePointer } from "react-icons/fi";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function App() {
   return (
@@ -35,6 +35,19 @@ export default function App() {
         </div>
       </div>
       <Tiltcard />
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={8}
+        color='193, 33, 333'
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          'span',
+          'img',
+          'h1',
+        ]}
+      />
     </div>
   );
 };
